@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.homeBg {
+  background-image: url(./assets/homeBg.png);
+  height: 550px;
+  background-position: center;
+  background-size: contain;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bgLogin {
+  background-image: url(./assets/bgLogin.png);
+  height: 768px;
+  background-position: center;
+  background-size: contain;
+}
+.bgRegister {
+  background-image: url(./assets/bgRegister.png);
+  height: 768px;
+  background-position: center;
+  background-size: contain;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+/* screen 1024px tablet ipad pro */
+@media only screen and (max-width: 1024px) {
+  .homeBg{
+    height: 400px;
+  }
+  .bgLogin {
+    height: 768px;
+  }
+  .bgRegister {
+    height: 768px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* screen 768px tablet ipad */
+@media only screen and (max-width: 768px) {
+  .homeBg{
+    height: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .bgLogin {
+    height: 568px;
+  }
+  .bgRegister {
+    height: 568px;
+  }
+}
+
+/* screen max 600px phone */
+@media only screen and (max-width: 600px) {
+  .homeBg{
+    height: 250px;
+    background-size: cover;
   }
 }
