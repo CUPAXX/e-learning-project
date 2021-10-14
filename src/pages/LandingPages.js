@@ -3,6 +3,7 @@ import logo from '../assets/logo.png'
 import bgFeature from '../assets/bgFeature.png'
 import Slider from 'react-slick'
 import SliderInfoItem from '../components/SliderInfoItem'
+import { Link } from 'react-scroll'
 
 export default class LandingPages extends Component {
   render () {
@@ -45,7 +46,12 @@ export default class LandingPages extends Component {
         <section id="homeId" className="homeBg flex flex-col justify-center items-center  ">
         <div className="flex flex-col bg-black bg-opacity-70 gap-2 md:gap-4 lg:gap-8 items-center w-full py-4 md:py-5 lg:py-8">
           <div className="text-white font-bold text-2xl md:text-4xl lg:text-5xl xl:text-7xl">E-Learning Cupaxx School</div>
-          <a href="#about" className="bg-yellow-600 hover:bg-yellow-500 btn-login py-2  px-6 md:px-8 lg:px-10 rounded-lg flex justify-center items-center text-white lg:text-base text-xs font-bold">Let&apos;s Start</a>
+          <Link activeClass="active"
+          to="aboutId"
+          spy={true}
+          smooth={true}
+          duration={100}
+          className="bg-yellow-600 hover:bg-yellow-500 btn-login py-2 cursor-pointer px-6 md:px-8 lg:px-10 rounded-lg flex justify-center items-center text-white lg:text-base text-xs font-bold">Let&apos;s Start</Link>
         </div>
       </section>
       <section id="aboutId" className="flex flex-row justify-center items-center py-10 md:py-16 px-4 md:px-8 lg:px-14 gap-4 md:gap-7 lg:gap-10">

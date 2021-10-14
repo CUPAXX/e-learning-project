@@ -21,9 +21,9 @@ export default function MainRightItems (props) {
           <div className="bg-yellow-700 text-white text-center py-3 rounded-lg cursor-pointer font-semibold hover:bg-yellow-500">I Am a Teacher</div>
           <div className="bg-yellow-700 text-white text-center py-3 rounded-lg cursor-pointer font-semibold hover:bg-yellow-500">I Am a Student</div>
         </div>
-        <NavLink to={props.path}>
-          <h3 className="text-center font-semibold text-sm text-yellow-700 my-12 hover:text-yellow-500 cursor-pointer">{props.subTitle}</h3>
-        </NavLink>
+        <div onClick={props.onTrigger}>
+              <h3 className="text-center font-semibold text-sm text-yellow-700 my-12 hover:text-yellow-500 cursor-pointer">I Don&apos;t Have Any Account</h3>
+            </div>
        </section>
     </div>
   )
