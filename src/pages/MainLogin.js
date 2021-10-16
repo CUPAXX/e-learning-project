@@ -28,10 +28,10 @@ export default class MainLogin extends Component {
         </section>
         {this.state.showModal !== false
           ? (
-          <div className="bg-gray-800 bg-opacity-40 top-0 w-full h-full absolute flex justify-center items-center">
-              <div className=" bg-gray-600 w-80 px-10 py-8 -mt-52 relative">
+          <div className="bg-gray-800 bg-opacity-40 top-0 w-full h-full absolute flex justify-center items-center ">
+              <div className=" bg-gray-600 w-80 px-10 py-8 -mt-52 relative rounded-lg">
                 <h3 className="text-white text-center">Please Contact The Administrator For Creating Your Account admin@mail.com</h3>
-                <AiFillCloseCircle onClick={this.triggerModal} className="absolute -top-3 -right-3 text-white hover:text-red-500 cursor-pointer" size={25} />
+                <AiFillCloseCircle onClick={this.triggerModal} className="absolute -top-2 -right-2 text-white hover:text-red-500 cursor-pointer" size={30} />
               </div>
           </div>
             )

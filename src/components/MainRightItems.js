@@ -18,8 +18,8 @@ export default function MainRightItems (props) {
         </div>
         <h2 className="font-bold text-4xl text-center text-yellow-700 pb-20">{props.title}</h2>
         <div className="flex flex-col gap-8 px-5">
-          <div className="bg-yellow-700 text-white text-center py-3 rounded-lg cursor-pointer font-semibold hover:bg-yellow-500">I Am a Teacher</div>
-          <div className="bg-yellow-700 text-white text-center py-3 rounded-lg cursor-pointer font-semibold hover:bg-yellow-500">I Am a Student</div>
+          <NavLink to="/login/teacher" className="bg-yellow-700 text-white text-center py-3 rounded-lg cursor-pointer font-semibold hover:bg-yellow-500">I Am a Teacher</NavLink>
+          <NavLink to="/login/student" className="bg-yellow-700 text-white text-center py-3 rounded-lg cursor-pointer font-semibold hover:bg-yellow-500">I Am a Student</NavLink>
         </div>
         <div onClick={props.onTrigger}>
               <h3 className="text-center font-semibold text-sm text-yellow-700 my-12 hover:text-yellow-500 cursor-pointer">I Don&apos;t Have Any Account</h3>
