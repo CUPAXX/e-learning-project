@@ -7,7 +7,7 @@ export default function Footer () {
   const location = useLocation()
   return (
       <React.Fragment>
-        {location.pathname !== '/admin'
+        {location.pathname !== '/admin' && location.pathname !== '/admin/kelas'
           ? (
         <footer className="bg-gray-400 md:py-5 py-4 md:px-10 px-5 mt-10 grid grid-cols-2 md:grid-cols-3 items-center">
           <img src={logo} className=" h-8 md:h-12" alt="logo" />

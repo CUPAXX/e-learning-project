@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { BsBook, BsPeople, BsArchive, BsJournalBookmark, BiHome } from 'react-icons/all'
 import { NavLink } from 'react-router-dom'
 
-export default class Sidebar extends Component {
-  render () {
-    return (
+export default function Sidebar () {
+  // const { url } = useRouteMatch()
+  return (
       <nav className="flex flex-col w-12 md:w-44 lg:w-48 xl:w-52 h-screen items-center gap-5">
-        <NavLink to="/admin" className=" hover:text-yellow-700 flex flex-row py-4 items-center">
+        <NavLink to={'/admin'} className=" hover:text-yellow-700 flex flex-row py-4 items-center">
           <h2 className="hidden md:inline text-xl font-semibold">Dashboard</h2>
           <BiHome className="md:hidden inline" size={30} />
         </NavLink>
@@ -15,7 +15,7 @@ export default class Sidebar extends Component {
             <BsPeople size={20} />
             <h3 className="hidden md:inline">User</h3>
           </NavLink>
-          <NavLink to="/admin/kelas" className="hover:text-yellow-700 flex flex-row gap-3 items-center">
+          <NavLink to={'/admin/kelas'} className="hover:text-yellow-700 flex flex-row gap-3 items-center">
             <BsArchive size={20} />
             <h3 className="hidden md:inline">Kelas</h3>
           </NavLink>
@@ -41,6 +41,5 @@ export default class Sidebar extends Component {
           </NavLink>
         </div>
       </nav>
-    )
-  }
+  )
 }

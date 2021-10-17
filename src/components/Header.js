@@ -17,7 +17,7 @@ export default function Header () {
   return (
     <React.Fragment>
     {location.pathname !== '/login' && location.pathname !== '/signup' && location.pathname !== '/login/teacher' && location.pathname !== '/login/student' &&
-      location.pathname !== '/forgot' && location.pathname !== '/forgot-change' && location.pathname !== '/admin'
+      location.pathname !== '/forgot' && location.pathname !== '/forgot-change' && location.pathname !== '/admin' && location.pathname !== '/admin/kelas'
       ? (
       <React.Fragment>
       <header id="headerId" className="bg-white static flex flex-row justify-between items-center py-2 px-5">

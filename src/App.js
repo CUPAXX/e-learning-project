@@ -14,7 +14,7 @@ import MainLogin from './pages/MainLogin'
 import Login from './pages/Login'
 import Forgot from './pages/Forgot'
 import ForgotChange from './pages/ForgotChange'
-import AdminDashboard from './pages/admin/AdminDashboard'
+import AdminIndex from './pages/admin/AdminIndex'
 
 function App () {
   return (
@@ -27,7 +27,7 @@ function App () {
         {/* <Route path="/signup" exact component={MainRegister} /> */}
         <Route path="/forgot" component={Forgot} />
         <Route path="/forgot-change" component={ForgotChange} />
-        <Route path="/admin" exact component={AdminDashboard} />
+        <Route component={AdminIndex} />
       </Switch>
       <Footer />
     </BrowserRouter>

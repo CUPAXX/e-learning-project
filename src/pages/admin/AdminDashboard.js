@@ -1,16 +1,9 @@
 import React, { Component } from 'react'
-import Sidebar from './components/Sidebar'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 
-export default class AdminDashboard extends Component {
+class AdminDashboard extends Component {
   render () {
     return (
-      <div className="flex flex-row">
-        <Sidebar />
-        <div className="flex flex-col flex-grow bg-gray-200">
-          <Navbar />
-          <div className="flex flex-col h-full mx-10 my-10 gap-8">
+      <div className="flex flex-col h-full mx-10 my-10 gap-8">
             <h2 className="font-bold text-3xl">Dashboard Admin</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
               <div className="flex flex-col items-center gap-2">
@@ -31,9 +24,8 @@ export default class AdminDashboard extends Component {
               </div>
             </div>
           </div>
-          <Footer />
-        </div>
-      </div>
     )
   }
 }
+
+export default AdminDashboard
