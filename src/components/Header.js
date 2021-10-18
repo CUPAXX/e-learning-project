@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import { GiHamburgerMenu, BiChevronUp } from 'react-icons/all'
 import { Link } from 'react-scroll'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
-  const location = useLocation()
   const menu = () => {
     if (showMenu !== true) {
       setShowMenu(true)
@@ -16,9 +15,6 @@ export default function Header () {
   }
   return (
     <React.Fragment>
-    {location.pathname !== '/login' && location.pathname !== '/signup' && location.pathname !== '/login/teacher' && location.pathname !== '/login/student' &&
-      location.pathname !== '/forgot' && location.pathname !== '/forgot-change' && location.pathname !== '/admin' && location.pathname !== '/admin/kelas'
-      ? (
       <React.Fragment>
       <header id="headerId" className="bg-white static flex flex-row justify-between items-center py-2 px-5">
       <Link to="/">
@@ -102,10 +98,6 @@ export default function Header () {
         <BiChevronUp size={40} className="bg-yellow-600 fixed bottom-4 cursor-pointer"></BiChevronUp>
       </Link>
       </React.Fragment>
-        )
-      : (
-      <div></div>
-        )}
 
     </React.Fragment>
   )

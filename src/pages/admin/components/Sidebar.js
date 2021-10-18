@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsBook, BsPeople, BsArchive, BsJournalBookmark, BiHome } from 'react-icons/all'
+import { BsBook, BsPeople, BsArchive, BsJournalBookmark, BiHome, BsVectorPen, BsSticky, BsInfoSquare } from 'react-icons/all'
 import { NavLink } from 'react-router-dom'
 
 export default function Sidebar () {
@@ -28,15 +28,15 @@ export default function Sidebar () {
             <h3 className="hidden md:inline">Materi</h3>
           </NavLink>
           <NavLink to="/admin/latihan" className="hover:text-yellow-700 flex flex-row gap-3 items-center">
-            <BsPeople size={20} />
+            <BsVectorPen size={20} />
             <h3 className="hidden md:inline">Latihan</h3>
           </NavLink>
           <NavLink to="/admin/quiz" className="hover:text-yellow-700 flex flex-row gap-3 items-center">
-            <BsPeople size={20} />
+            <BsSticky size={20} />
             <h3 className="hidden md:inline">Quiz</h3>
           </NavLink>
           <NavLink to="/admin/informasi" className="hover:text-yellow-700 flex flex-row gap-3 items-center">
-            <BsPeople size={20} />
+            <BsInfoSquare size={20} />
             <h3 className="hidden md:inline">Informasi</h3>
           </NavLink>
         </div>

@@ -4,6 +4,8 @@ import bgFeature from '../assets/bgFeature.png'
 import Slider from 'react-slick'
 import SliderInfoItem from '../components/SliderInfoItem'
 import { Link } from 'react-scroll'
+import Header from '../components/Header'
+import Footer from './admin/components/Footer'
 
 export default class LandingPages extends Component {
   render () {
@@ -43,6 +45,7 @@ export default class LandingPages extends Component {
     }
     return (
       <div>
+        <Header />
         <section id="homeId" className="homeBg flex flex-col justify-center items-center  ">
         <div className="flex flex-col bg-black bg-opacity-70 gap-2 md:gap-4 lg:gap-8 items-center w-full py-4 md:py-5 lg:py-8">
           <div className="text-white font-bold text-2xl md:text-4xl lg:text-5xl xl:text-7xl">E-Learning Cupaxx School</div>
@@ -115,6 +118,7 @@ export default class LandingPages extends Component {
             />
         </Slider>
       </section>
+      <Footer />
       </div>
     )
   }

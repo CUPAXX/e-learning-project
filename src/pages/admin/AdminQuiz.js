@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-class AdminKelas extends Component {
+
+export default class AdminQuiz extends Component {
   render () {
     return (
       <div>
-        kelas
+        Quiz
       </div>
     )
   }
 }
-export default AdminKelas

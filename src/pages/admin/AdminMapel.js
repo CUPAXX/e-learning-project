@@ -4,7 +4,7 @@ export default class AdminMapel extends Component {
   render () {
     return (
       <div>
-
+        mapel
       </div>
     )
   }
