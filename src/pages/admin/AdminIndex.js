@@ -60,9 +60,9 @@ const routes = [
 const AdminIndex = () => {
   return (
     <div>
-      <div className="flex flex-row">
+      <div className="flex flex-row z-20">
         <Sidebar />
-        <div className="flex flex-col flex-grow bg-gray-200">
+        <div className="flex flex-col flex-grow bg-gray-200 z-10">
           <Navbar />
           <div>
             {routes.map((route, index) => (
